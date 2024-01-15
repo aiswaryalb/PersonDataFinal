@@ -1,0 +1,50 @@
+person_data.upload_form:
+  path: '/import'
+  defaults:
+    _form: '\Drupal\person_data\Form\PersonDataUploadForm'
+    _title: 'Import Person CSV'
+  requirements:
+    _permission: 'upload csv'
+person_data.add_form:
+  path: '/salary/add'
+  defaults:
+    _form: '\Drupal\person_data\Form\SalaryAddForm'
+    _title: 'Add Salary Details'
+  requirements:
+    _permission: 'add salary details'
+person_data.edit_form:
+  path: '/salary/{id}/edit'
+  defaults:
+      _form: '\Drupal\person_data\Form\SalaryEditForm'
+      _title: 'Edit Salary Details'
+  requirements:
+      _permission: 'edit salary details'
+person_data.delete_form:
+  path: '/salary/delete'
+  defaults:
+      _form: '\Drupal\person_data\Form\SalaryDeleteForm'
+      _title: 'Delete Salary Details'
+  requirements:
+      _permission: 'delete salary details'
+entity.person_data_person.settings:
+  path: '/admin/structure/person-data-person'
+  defaults:
+    _form: '\Drupal\person_data\Form\PersonSettingsForm'
+    _title: 'person'
+  requirements:
+    _permission: 'administer person_data_person'
+person_data.content:
+  path: '/person-data'
+  defaults:
+    _controller: '\Drupal\person_data\Controller\PersonDataController::content'
+    _title: 'Person and Salary Data'
+  requirements:
+    _permission: 'access content'
+person_data.dynamic_report:
+  path: '/dynamic-report'
+  defaults:
+    _form: '\Drupal\person_data\Form\DynamicReportForm'
+    _title: 'Dynamic Report Form'
+  requirements:
+    _permission: 'access content'
+

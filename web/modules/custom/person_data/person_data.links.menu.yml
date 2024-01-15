@@ -1,0 +1,48 @@
+person_data.upload_csv:
+  title: Upload CSV
+  description: Upload CSV file
+  route_name: person_data.upload_form
+  weight: 10
+  menu_name: main
+person_data.add_salary:
+  title: Add Salary
+  description: Add salary details
+  route_name: person_data.add_form
+  weight: 10
+  menu_name: main
+person_data.delete_salary:
+  title: Delete Salary
+  description: Delete salary details
+  route_name: person_data.delete_form
+  weight: 10
+  menu_name: main
+person_data.edit_salary:
+  title: Edit Salary
+  description: Edit salary details
+  route_name: person_data.edit_form
+  route_parameters:
+    id: 1  
+  menu_name: main   
+person_data.join_table:
+  title: Joined Table
+  description: Join of 2 tables
+  route_name: person_data.content
+  weight: 10
+  menu_name: main
+person_data.dynamic_report:
+    title: 'Dynamic Table'
+    route_name: person_data.dynamic_report
+    weight: 10
+    menu_name: main
+entity.person_data_person.settings:
+  title: 'person'
+  description: 'Configure a person entity type.'
+  route_name:  entity.person_data_person.settings
+  parent: system.admin_structure
+entity.person_data_person.collection:
+  title: 'persons'
+  description: 'List of persons.'
+  route_name: entity.person_data_person.collection
+  parent: system.admin_content
+
+

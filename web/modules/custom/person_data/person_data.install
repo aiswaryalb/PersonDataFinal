@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for person_data module.
+ */
+
+/**
+* Implements hook_schema()
+*/
+
+function person_data_schema() {
+    
+    $schema['person_salary'] = array(
+        'description' => 'Stores salary details of a person',
+        'fields' => array(
+            'id' =>array(
+                'type' => 'int',
+                'not null' => TRUE,
+                'description' => 'Primary Key: unique entry ID',
+            ),
+            'month' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'description' => 'Month of the salary entry',
+            ),
+            'year' => array(
+                'type' => 'int',
+                'not null' => TRUE,
+                'description' => 'Year of the salary entry',
+            ),
+            'salary' => array(
+                'type' => 'int',
+                'not null' => TRUE,
+                'description' => 'Salary amount',
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+    return $schema;
+}

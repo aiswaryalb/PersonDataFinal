@@ -1,0 +1,23 @@
+upload csv:
+  title: 'Upload Person Data CSV'
+  description: 'Allows users to upload csv files.'
+add salary details:
+  title: 'Add Salary Details'
+  description: 'Allows users to add salary details.'
+edit salary details:
+  title: 'Edit Salary Details'
+  description: 'Allows users to edit salary details.'
+delete salary details:
+  title: 'Delete Salary Details'
+  description: 'Allows users to delete salary details.'
+administer person_data_person:
+  title: 'Administer persons'
+  restrict access: true
+view person_data_person:
+  title: 'View person'
+edit person_data_person:
+  title: 'Edit person'
+delete person_data_person:
+  title: 'Delete person'
+create person_data_person:
+  title: 'Create person'

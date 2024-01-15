@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - person_data
+id: person_data_person_delete_action
+label: 'Delete persons'
+type: person_data_person
+plugin: entity:delete_action:person_data_person
+configuration: {  }
